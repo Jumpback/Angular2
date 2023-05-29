@@ -1,0 +1,24 @@
+<h2>{{title}}</h2>
+
+<label>Name: </label>
+<input type="text" #name><br><br>
+<label>Email: </label>
+<input type="email" #email><br><br>
+<label>Password: </label>
+<input type="password" #pass><br><br>
+
+<button>Submit</button>
+
+<br>
+<br>
+<br>
+<br>
+
+
+<button (click)="getValue(name.value , email.value)">Show user</button>
+
+
+
+
+<p>WELCOME {{displayName}} !!!!!</p>
+<p>You have registed with email id :{{displayEmail}}</p>
